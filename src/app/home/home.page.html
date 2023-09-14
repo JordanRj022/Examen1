@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="black">
+    <ion-title>
+      Login 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Bienvenido ingresar usuario
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" color="black"> Usuario</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" color="black"> Contraseña</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button routerLink="/inicio">Ingresar</ion-button>
+      <div class="registro-link">
+      ¿Olvidaste tu contraseña? <a routerLink="/restablecer">Restablecer tu contraseña</a>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
